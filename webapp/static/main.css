@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: OpenSans-Regular, sans-serif
+}
+
+
+.container-login {
+    width: 100%;
+    height: 100vh;
+    background: #3c5077;
+    display: flex;
+    padding: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup-login{
+    width: 400px;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 30px 30px 30px;
+    border-radius: 6px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+
+.popup-login button{
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px 0;
+    background: #6fd649;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.input-login {
+    display: block;
+    width: 100%;
+    background: 0 0;
+    font-family: OpenSans-Regular;
+    font-size: 15px;
+    color: #666;
+    line-height: 1.2;
+    height: 68px;
+    padding: 0 25px;
+}

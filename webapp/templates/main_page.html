@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+        <!-- Открытие попапа авторизации -->
+        <button type="submit" onclick="openPopup()">Вход в ЛК</button>
+
+        <!-- Для проверки, что было введено в форму  -->
+        <div>
+          {{ login }} : {{ password }}
+        </div>
+
+        <!-- Попап авторизации -->
+        <div class="popup-login" id="popup">
+            <h1>Sign In</h1>
+            <button type="button" onclick="closePopup()">Close</button>
+        </div>
+
+        <script>
+            let popup = document.getElementById("popup");
+
+            function openPopup() {
+                popup.classList.add("open-popup");
+            }
+
+            function closePopup() {
+                popup.classList.remove("open-popup");
+            }
+        </script>
+
+{% endblock %}
